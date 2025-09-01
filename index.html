@@ -27,5 +27,22 @@
   <body>
     <h1>Student Name</h1>
     <div id="Cards"></div>
+
+    <script>
+      const arr = [
+        "Siddheshwar",
+        "Harshada",
+        "Renuka",
+        "Shreyash",
+        "Satyam",
+        "Tanvi",
+        "Arya",
+        "Aditya",
+      ];
+
+      const Student = document.getElementById("Cards");
+      for (const student of arr)
+        Student.innerHTML += `<div class="Cards">${student}</div>`;
+    </script>
   </body>
 </html>
